@@ -27,8 +27,8 @@
 		
 		private function stageResized(e:Event):void
 		{
-			starling.stage.StageWidth = this.stage.stageWidth;
-			starling.stage.StageHeight = this.stage.stageHeight;
+			starling.stage.stageWidth = this.stage.stageWidth;
+			starling.stage.stageHeight = this.stage.stageHeight;
 			const viewPort:Rectangle = starling.viewPort;
 			viewPort.width = this.stage.stageWidth;
 			viewPort.height = this.stage.stageHeight;
