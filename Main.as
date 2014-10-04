@@ -76,6 +76,11 @@
 			this.addChild(this.buttonPanel);
 			this.contentPanal = new Panel;
 			
+			var contentPanelLayoutData:AnchorLayoutData = new AnchorLayoutData ();
+			contentPanelLayoutData.top = 10;
+			contentPanelLayoutData.bottom = 10;
+			contentPanelLayoutData.left = 10;
+			contentPanelLayoutData.right = 10;
 			
 			
 
