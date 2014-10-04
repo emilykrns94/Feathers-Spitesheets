@@ -25,7 +25,7 @@
 
 	public class Main extends Screen
 	{
-		[Embed(source = "SpriteSheetTextures.xml", mimeType = "application/octest-stream")]
+		[Embed(source ="SpriteSheetTextures.xml", mimeType = "application/octet-stream")]
 		public static const ATLAS_XML:Class;
 		
 		[Embed(source = "SpriteSheetTextures.png")]
@@ -104,7 +104,7 @@
 			bgImgLoader.source = atlas.getTexture("Sprite_2")
 		}
 		
-		protected funtion stageResized(e:Event):void
+		protected function stageResized(event:Event):void
 		{
 			this.height = this.stage.stageHeight;
 			this.width = this.stage.stageWidth;
