@@ -25,7 +25,7 @@
 
 	public class Main extends Screen
 	{
-		[Embed(source ="SpriteSheetTextures.xml", mimeType = "application/octet-stream")]
+		[Embed(source = "Spritesheet.xml", mimeType = "application/octet-stream")]
 		public static const ATLAS_XML:Class;
 		
 		[Embed(source = "SpriteSheetTextures.png")]
