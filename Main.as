@@ -103,6 +103,13 @@
 		{
 			bgImgLoader.source = atlas.getTexture("Sprite_2")
 		}
+		
+		protected funtion stageResize(event:Event):void
+		{
+			this.height = this.stage.stageHeight;
+			this.width = this.stage.stageWidth;
+			bgImgLoader.width = this.width;
+		}
 
 	}
 
