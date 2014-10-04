@@ -82,10 +82,26 @@
 			contentPanelLayoutData.left = 10;
 			contentPanelLayoutData.right = 10;
 			
+			contentPanelLayoutData.bottomAnchorDisplayObject = this.buttonPanel;
+			contentPanel.LayoutData = contentPanelLayoutData;
+			this.addChild(contentPanel);
 			
-
-
+			bgTexture = atlas.getTexture("Sprite_1");
+			bgImgLoader.source = bgTexture;
+			bgImgLoader.width = this.stage.stageWidth;
+			contentPanel.addChild(bgImgLoader);
 			
+			this.button = new Button ();
+			this.button.label = "See Next Image";
+			
+			this.button.addEventListener(Event.TRIGGERED, buttonHandler);
+			
+			this.ButtonPanel.addChild(this.button);
+			
+		}
+		protected function buttonHandler(event:Event):void
+		{
+			bgImgLoader.source = atlas.getTexture("Sprite_2")
 		}
 
 	}
