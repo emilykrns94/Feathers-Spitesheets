@@ -30,9 +30,9 @@
     <transparent>false</transparent>
     <visible>true</visible>
     <fullScreen>false</fullScreen>
-    <aspectRatio>portrait</aspectRatio>
-    <renderMode>cpu</renderMode>
-  </initialWindow>
+    
+    <renderMode>direct</renderMode>
+    <autoOrients>true</autoOrients></initialWindow>
   <icon/>
   <customUpdateUI>false</customUpdateUI>
   <allowBrowserInvocation>false</allowBrowserInvocation>

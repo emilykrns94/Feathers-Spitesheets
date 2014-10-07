@@ -20,7 +20,7 @@
 			this.stage.align = StageAlign.TOP_LEFT;
 			this.stage.scaleMode = StageScaleMode.NO_SCALE;
 			this.stage.addEventListener(Event.RESIZE, stageResized);
-			starling.handleLostContext = true;
+			Starling.handleLostContext = true;
 			starling = new Starling(Main,this.stage);
 			starling.start();
 		}
